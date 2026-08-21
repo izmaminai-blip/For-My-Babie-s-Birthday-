@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+    color: white;
+
+    background:
+        radial-gradient(circle at 15% 20%, #a52d61 0%, transparent 30%),
+        radial-gradient(circle at 85% 10%, #d85b89 0%, transparent 28%),
+        linear-gradient(135deg, #16000b, #45051f, #7b1645);
+
+    overflow-x: hidden;
+}
+
+/* ==================================================
+FLOATING HEARTS
+================================================== */
+
+.heart {
+    position: fixed;
+    bottom: -50px;
+    pointer-events: none;
+    z-index: 1;
+
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+/* ==================================================
+GENERAL
+================================================== */
+
+.container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+    margin: auto;
+
+    padding: 30px 20px 80px;
+}
+
+.screen {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.fade {
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.tiny {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #ffd0df;
+
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: clamp(45px, 9vw, 85px);
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 5px 30px rgba(255,130,180,0.5);
+}
+
+h2 {
+    font-size: clamp(32px, 6vw, 52px);
+
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.pink {
+    color: #ffb6d0;
+}
+
+.subtitle {
+    max-width: 650px;
+
+    font-size: 19px;
+
+    color: #ffe7ef;
+
+    margin-bottom: 35px;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+.main-btn {
+    background: #ffd0df;
+    color: #59072e;
+
+    border: none;
+
+    padding: 16px 32px;
+
+    border-radius: 40px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.3);
+}
+
+.secondary-btn {
+    margin-top: 25px;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+}
+
+/* ==================================================
+MUSIC
+================================================== */
+
+.music-btn {
+    position: fixed;
+
+    right: 18px;
+    top: 18px;
+
+    z-index: 50;
+
+    border: none;
+
+    background: #ffd1e0;
+
+    color: #59072e;
+
+    border-radius: 30px;
+
+    padding: 11px 17px;
+
+    font-weight: bold;
+}
+
+/* ==================================================
+BIG HEART
+================================================== */
+
+.big-heart {
+    font-size: 75px;
+
+    animation: heartbeat 1.3s infinite;
+
+    margin-bottom: 20px;
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.16);
+    }
+
+}
+
+/* ==================================================
+MAIN MENU
+================================================== */
+
+.menu {
+
+    width: 100%;
+    max-width: 720px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 18px;
+}
+
+.menu-card {
+
+    min-height: 180px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,0.1);
+
+    border:
+        1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(12px);
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.menu-card:hover {
+
+    background:
+        rgba(255,255,255,0.18);
+
+    transform:
+        translateY(-6px);
+}
+
+.menu-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 12px;
+}
+
+.menu-card p {
+
+    color: #ffdce8;
+
+    font-size: 13px;
+}
+
+/* ==================================================
+TRUTH OR DARE
+================================================== */
+
+.choices {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.choice {
+
+    background:
+        rgba(255,255,255,0.12);
+
+    color: white;
+
+    border:
+        1px solid rgba(255,255,255,0.25);
+
+    padding:
+        13px 30px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+}
+
+.choice.active {
+
+    background: #ffb5cf;
+
+    color: #57072d;
+
+    font-weight: bold;
+}
+
+.game-card {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    min-height: 350px;
+
+    padding: 45px 30px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255,255,255,0.11);
+
+    border:
+        1px solid rgba(255,255,255,0.22);
+
+    backdrop-filter: blur(15px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.3);
+}
+
+.card-label {
+
+    color: #ffb3ce;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    margin-bottom: 20px;
+}
+
+.question {
+
+    max-width: 680px;
+
+    font-size:
+        clamp(22px,5vw,35px);
+
+    line-height: 1.45;
+
+    margin-bottom: 30px;
+}
+
+.next-btn {
+
+    border: none;
+
+    background: #ffb4cf;
+
+    color: #57072d;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+.counter {
+
+    margin-top: 17px;
+
+    color: #ffd2e0;
+
+    font-size: 13px;
+}
+
+/* ==================================================
+GIFTS
+================================================== */
+
+.gift-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 18px;
+}
+
+.gift {
+
+    min-height: 240px;
+
+    padding: 25px 15px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,0.1);
+
+    border:
+        1px solid rgba(255,255,255,0.22);
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.gift:hover {
+
+    background:
+        rgba(255,255,255,0.18);
+
+    transform:
+        translateY(-7px);
+}
+
+.gift-box {
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+}
+
+.gift-content {
+
+    display: none;
+
+    margin-top: 15px;
+
+    color: #ffe5ed;
+
+    font-size: 14px;
+}
+
+.gift-content.show {
+
+    display: block;
+}
+
+/* ==================================================
+10 REASONS — ALL ON ONE PAGE
+================================================== */
+
+.reasons-list {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin:
+        20px 0 10px;
+}
+
+.reason-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        20px 24px;
+
+    text-align: left;
+
+    background:
+        rgba(255,255,255,0.10);
+
+    border:
+        1px solid rgba(255,255,255,0.18);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.25s;
+}
+
+.reason-card:hover {
+
+    transform:
+        translateX(7px);
+
+    background:
+        rgba(255,255,255,0.17);
+}
+
+.reason-card span {
+
+    min-width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffb6d0;
+
+    color: #59072e;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+.reason-card p {
+
+    color: #ffe7ef;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+.special-reason {
+
+    background:
+        rgba(255,182,208,0.16);
+
+    border-color:
+        rgba(255,182,208,0.4);
+
+    margin-top: 5px;
+}
+
+.special-reason p {
+
+    color: white;
+
+    font-weight: bold;
+}
+
+/* ==================================================
+FINAL
+================================================== */
+
+.final-message {
+
+    max-width: 700px;
+
+    font-size: 20px;
+
+    line-height: 2;
+
+    color: #ffe5ed;
+}
+
+.letter {
+
+    max-width: 720px;
+
+    margin-top: 35px;
+
+    padding:
+        45px 35px;
+
+    background: #fff3f7;
+
+    color: #5b1233;
+
+    text-align: left;
+
+    line-height: 2;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.35);
+}
+
+.letter h3 {
+
+    text-align: center;
+
+    color: #8c1748;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+.letter p {
+
+    margin-bottom: 20px;
+}
+
+/* ==================================================
+MOBILE
+================================================== */
+
+@media (max-width:650px) {
+
+    .menu {
+
+        grid-template-columns: 1fr;
+    }
+
+    .gift-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .game-card {
+
+        padding:
+            30px 20px;
+    }
+
+    .reason-card {
+
+        align-items: flex-start;
+
+        padding:
+            17px;
+    }
+
+    .reason-card span {
+
+        min-width: 38px;
+
+        height: 38px;
+    }
+
+    .reason-card p {
+
+        font-size: 15px;
+    }
+
+}
+
+/* ==================================================
+END CSS
+================================================== */
+
+</style>
+</head>
+
+<body>
+
+<!-- ==================================================
+MUSIC
+================================================== -->
+
+<audio id="song" loop>
+
+    <source
+        src="tu-hi-mera.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+<button
+    class="music-btn"
+    onclick="toggleMusic()"
+    id="musicButton">
+
+    🎵 Music: OFF
+
+</button>
+
+
+<div class="container">
+
+<!-- ==================================================
+OPENING
+================================================== -->
+
+<section
+    class="screen fade"
+    id="opening">
+
+    <div class="big-heart">
+        🎂
+    </div>
+
+    <div class="tiny">
+        A little birthday surprise
+    </div>
+
+    <h1>
+
+        Happy Birthday,
+
+        <br>
+
+        <span class="pink">
+            My Love ❤️
+        </span>
+
+    </h1>
+
+    <p class="subtitle">
+
+        I could've just sent you
+        a birthday text...
+
+        <br><br>
+
+        But unfortunately for you,
+        you have a girlfriend
+        who does too much. 😭❤️
+
+        <br><br>
+
+        So I made you this.
+
+    </p>
+
+    <button
+        class="main-btn"
+        onclick="openBirthday()">
+
+        🎁 Open Your Birthday Surprise
+
+    </button>
+
+</section>
+
+
+<!-- ==================================================
+MENU
+================================================== -->
+
+<section
+    class="screen hidden fade"
+    id="menuScreen">
+
+    <div class="tiny">
+        Birthday Boy
+    </div>
+
+    <h2>
+
+        Everything here is for
+        <span class="pink">
+            you
+        </span> ❤️
+
+    </h2>
+
+    <p class="subtitle">
+
+        Pick something...
+
+        <br>
+
+        I made all of it for you.
+
+    </p>
+
+    <div class="menu">
+
+        <div
+            class="menu-card"
+            onclick="openGame()">
+
+            <div class="menu-icon">
+                🎲
+            </div>
+
+            <h3>
+                Truth or Dare
+            </h3>
+
+            <p>
+                10 truths + 10 dares.
+                Be honest. Or be brave. 👀
+            </p>
+
+        </div>
+
+
+        <div
+            class="menu-card"
+            onclick="openGifts()">
+
+            <div class="menu-icon">
+                🎁
+            </div>
+
+            <h3>
+                Your Birthday Gifts
+            </h3>
+
+            <p>
+                Three little surprises
+                waiting for you.
+            </p>
+
+        </div>
+
+
+        <div
+            class="menu-card"
+            onclick="openReasons()">
+
+            <div class="menu-icon">
+                ❤️
+            </div>
+
+            <h3>
+                10 Reasons I Love You
+            </h3>
+
+            <p>
+                Ten reasons.
+                All in one place.
+            </p>
+
+        </div>
+
+
+        <div
+            class="menu-card"
+            onclick="openFinal()">
+
+            <div class="menu-icon">
+                💌
+            </div>
+
+            <h3>
+                You're Stuck With Me
+            </h3>
+
+            <p>
+                There's something waiting
+                for you at the end.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+TRUTH OR DARE
+================================================== -->
+
+<section
+    class="screen hidden fade"
+    id="gameScreen">
+
+    <div class="tiny">
+        Birthday Boy Edition
+    </div>
+
+    <h2>
+        Truth or Dare? 💗
+    </h2>
+
+    <p class="subtitle">
+
+        Don't skip the embarrassing ones.
+
+        <br>
+
+        I made these specifically for you. 😭
+
+    </p>
+
+    <div class="choices">
+
+        <button
+            class="choice active"
+            id="truthBtn"
+            onclick="setMode('truth')">
+
+            💭 Truth
+
+        </button>
+
+        <button
+            class="choice"
+            id="dareBtn"
+            onclick="setMode('dare')">
+
+            🔥 Dare
+
+        </button>
+
+    </div>
+
+
+    <div class="game-card">
+
+        <div
+            class="card-label"
+            id="cardLabel">
+
+            Truth
+
+        </div>
+
+        <div
+            class="question"
+            id="question">
+
+            Ready?
+
+            <br>
+
+            Let's see how honest you are. 👀❤️
+
+        </div>
+
+        <button
+            class="next-btn"
+            onclick="nextQuestion()">
+
+            Give Me One 💕
+
+        </button>
+
+        <div
+            class="counter"
+            id="counter">
+
+            0 / 10
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="secondary-btn"
+        onclick="backToMenu()">
+
+        ← Back
+
+    </button>
+
+</section>
+
+
+<!-- ==================================================
+GIFTS
+================================================== -->
+
+<section
+    class="screen hidden fade"
+    id="giftsScreen">
+
+    <div class="tiny">
+        Pick your gifts
+    </div>
+
+    <h2>
+        Birthday Gifts 🎁
+    </h2>
+
+    <p class="subtitle">
+        Three little things from me to you.
+    </p>
+
+
+    <div class="gift-grid">
+
+
+        <div
+            class="gift"
+            onclick="revealGift(this)">
+
+            <div class="gift-box">
+                🎁
+            </div>
+
+            <h3>
+                Gift #1
+            </h3>
+
+            <div class="gift-content">
+
+                A reminder that no matter
+                how far apart we are...
+
+                <br><br>
+
+                You still have a permanent
+                little piece of my heart. ❤️
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="gift"
+            onclick="revealGift(this)">
+
+            <div class="gift-box">
+                🎀
+            </div>
+
+            <h3>
+                Gift #2
+            </h3>
+
+            <div class="gift-content">
+
+                One imaginary date.
+
+                <br><br>
+
+                You + me + somewhere beautiful
+                + no distance
+                + no phones
+                + no one bothering us.
+
+                <br><br>
+
+                Just us. 🌙❤️
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="gift"
+            onclick="revealGift(this)">
+
+            <div class="gift-box">
+                💝
+            </div>
+
+            <h3>
+                Gift #3
+            </h3>
+
+            <div class="gift-content">
+
+                Your final gift:
+
+                <br><br>
+
+                Tell me the first thing
+                you'd do if I suddenly
+                appeared in front of you.
+
+                <br><br>
+
+                And don't you dare just say
+                "hug you" and leave it there. 👀
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="secondary-btn"
+        onclick="backToMenu()">
+
+        ← Back
+
+    </button>
+
+</section>
+
+
+<!-- ==================================================
+10 REASONS — ALL TOGETHER
+================================================== -->
+
+<section
+    class="screen hidden fade"
+    id="reasonsScreen">
+
+    <div class="tiny">
+        Just a few of the reasons...
+    </div>
+
+    <h2>
+        10 Reasons I Love You ❤️
+    </h2>
+
+    <p class="subtitle">
+
+        I could give you a million reasons,
+
+        <br>
+
+        but here are ten of my favourites.
+
+    </p>
+
+
+    <div class="reasons-list">
+
+
+        <div class="reason-card">
+
+            <span>
+                01
+            </span>
+
+            <p>
+
+                I love your smile lines around your
+                eyes and cutu cheeks when you smile—
+                it genuinely makes
+                my whole mood better 🤍
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                02
+            </span>
+
+            <p>
+
+                I love how you can
+                make me laugh even
+                when I'm not in the
+                mood to laugh and
+                jab tum mujhe tang karty ho 🤍
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                03
+            </span>
+
+            <p>
+
+                I love how safe and
+                comfortable I feel
+                whenever I'm with
+                to you. BEST FEELING 🤍
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                04
+            </span>
+
+            <p>
+
+                I love that even from
+                far away, you somehow
+                still feel SOOOOOOO 
+                close to me 🤍
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                05
+            </span>
+
+            <p>
+
+                I love all our Bhondu
+                jokes that are so unfunny
+                yet so funny 🤍
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                06
+            </span>
+
+            <p>
+
+                I love how you remember
+                the tiny little things about me
+                and remind me (That list in your phone 🤍).
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                07
+            </span>
+
+            <p>
+
+                I love how you make me
+                feel wanted, loved
+                and important alllllll the time 🤍
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                08
+            </span>
+
+            <p>
+
+                I love that I can share
+                anything and everything
+                with you and you only 🤍.
+
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>
+                09
+            </span>
+
+            <p>
+
+                I love imagining all
+                the memories we made and
+                still gonna make together 🤍
+
+            </p>
+
+        </div>
+
+
+        <div
+            class="reason-card special-reason">
+
+            <span>
+                10
+            </span>
+
+            <p>
+
+                I love you because you are
+                the best person and the best
+                thing happend to me in my entire
+                life and I will forever choose you ❤️
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button
+        class="secondary-btn"
+        onclick="backToMenu()">
+
+        ← Back
+
+    </button>
+
+</section>
+
+
+<!-- ==================================================
+FINAL
+================================================== -->
+
+<section
+    class="screen hidden fade"
+    id="finalScreen">
+
+    <div class="big-heart">
+        ❤️
+    </div>
+
+    <div class="tiny">
+        One last thing
+    </div>
+
+    <h1>
+        You're Stuck With Me.
+    </h1>
+
+
+    <div class="final-message">
+
+        You survived the truths.
+
+        <br>
+
+        You survived the dares.
+
+        <br>
+
+        You opened your gifts.
+
+        <br>
+
+        You survived my ten reasons
+        for loving you.
+
+        <br><br>
+
+        And unfortunately...
+
+        <br><br>
+
+        <strong>
+            YOU'RE STUCK WITH ME FOREVER. ❤️
+        </strong>
+
+        <br><br>
+
+        No refunds.
+
+        <br>
+
+        No exchanges.
+
+        <br>
+
+        No cancellation.
+
+        <br><br>
+
+        Not Sorry.
+
+        <br>
+
+        I don't make the rules. 😭
+
+        <br><br>
+
+        Well...
+
+        <br>
+
+        Maybe I do HEHEHEHEH.
+
+    </div>
+
+
+    <button
+        class="main-btn"
+        onclick="openLetter()">
+
+        💌 Read Your Letter Babie
+
+    </button>
+
+
+    <div
+        class="letter hidden"
+        id="letter">
+
+        <h3>
+            To My Love ❤️
+        </h3>
+
+        <p>
+            Happy birthday, meri jaan.
+        </p>
+
+        <p>
+
+            I wish I could be beside you
+            right now, annoying you in person,
+            making you laugh, stealing your
+            attention and probably refusing
+            to let you have any peace because
+            it's your birthday. 😭
+
+        </p>
+
+        <p>
+
+            Since I can't do that right now,
+            I made you this little corner
+            of the internet.
+
+        </p>
+
+        <p>
+
+            I wanted to give you something
+            you could come back to whenever
+            you miss me.
+
+        </p>
+
+        <p>
+
+            Every little heart, every question,
+            every dare, every reason and every
+            word here was made because I wanted
+            you to feel how loved you are.
+
+        </p>
+
+        <p>
+
+            I IZMORAE YOU 💕
+        </p>
+
+        <p>
+
+            I love that you are mine and I am yours 🤍
+
+        </p>
+
+        <p>
+
+            Distance might mean I can't physically
+            be there today, but it doesn't change
+            how much you mean to me.
+
+        </p>
+
+        <p>
+
+            I want more birthdays with you.
+            More memories.
+            More dates.
+            More laughing until our stomachs hurt.
+            More of everything with you.
+
+        </p>
+
+        <p>
+
+            And one day, hopefully,
+            no more screens between us and we would be together 💛.
+
+        </p>
+
+        <p>
+
+            Until then, I'm choosing you and you only mere munnu 💕.
+
+            <br>
+
+            Again.
+
+            <br>
+
+            And again.
+
+            <br>
+
+            And again.
+
+        </p>
+
+        <p>
+
+            Happy birthday to my favourite person. ❤️
+
+        </p>
+
+        <p style="text-align:center;">
+
+            <strong>
+
+                Stay Happy bohot saara and Blessed and Loved by me. ❤️
+
+            </strong>
+
+            <br><br>
+
+            <strong>
+
+                Now come here and give me
+                my birthday kiss fas fas. 💋
+
+            </strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<script>
+
+/* ==================================================
+TRUTHS
+================================================== */
+
+const truths = [
+
+    "What was the exact moment you realised you were falling for me?",
+
+    "What's the cutest thing about me that you don't think I realise?",
+
+    "What's your favourite memory of us?",
+
+    "What do you miss most about me when we're apart?",
+
+    "What's one thing I do that instantly makes you smile?",
+
+    "What's one thing you want to do with me the first time we get to spend a whole day together?",
+
+    "What's your favourite picture of me?",
+
+    "What's one thing about our relationship that you're secretly really grateful for?",
+
+    "How much do you love me and why 👀",
+
+    "What's one thing you've always wanted to tell me but never actually said? ❤️"
+
+];
+
+
+/* ==================================================
+DARES
+================================================== */
+
+const dares = [
+
+    "Send me a voice note telling me three things you love about me.",
+
+    "Send me your cutest selfie right now. No retakes. 😭",
+
+    "Tell me exactly what our dream date would look.",
+
+    "Send me a song that reminds you of me and tell me why.",
+
+    "Bring me a payal when we meet and propose me. 💋",
+
+    "Tell me five things you want to do together when we're finally in the same place.",
+
+    "Send me a voice note saying my name in your sweetest voice.",
+
+    "Spend whole night talking to me WE ARE NOT SLEEPING TILL 5AM. 👀",
+
+    "Answer to my dumb questions for next 1 hour.",
+
+    "End the game by telling me, in your own words, why you love me. ❤️"
+
+];
+
+
+/* ==================================================
+GAME VARIABLES
+================================================== */
+
+let mode = "truth";
+
+let truthIndex = 0;
+
+let dareIndex = 0;
+
+
+/* ==================================================
+OPEN BIRTHDAY
+================================================== */
+
+function openBirthday() {
+
+    document
+        .getElementById("opening")
+        .classList.add("hidden");
+
+    document
+        .getElementById("menuScreen")
+        .classList.remove("hidden");
+
+    createHearts();
+
+}
+
+
+/* ==================================================
+HIDE ALL SCREENS
+================================================== */
+
+function hideScreens() {
+
+    document
+        .querySelectorAll(".screen")
+        .forEach(screen => {
+
+            screen.classList.add("hidden");
+
+        });
+
+}
+
+
+/* ==================================================
+OPEN GAME
+================================================== */
+
+function openGame() {
+
+    hideScreens();
+
+    document
+        .getElementById("gameScreen")
+        .classList.remove("hidden");
+
+}
+
+
+/* ==================================================
+OPEN GIFTS
+================================================== */
+
+function openGifts() {
+
+    hideScreens();
+
+    document
+        .getElementById("giftsScreen")
+        .classList.remove("hidden");
+
+}
+
+
+/* ==================================================
+OPEN REASONS
+================================================== */
+
+function openReasons() {
+
+    hideScreens();
+
+    document
+        .getElementById("reasonsScreen")
+        .classList.remove("hidden");
+
+}
+
+
+/* ==================================================
+OPEN FINAL
+================================================== */
+
+function openFinal() {
+
+    hideScreens();
+
+    document
+        .getElementById("finalScreen")
+        .classList.remove("hidden");
+
+}
+
+
+/* ==================================================
+BACK TO MENU
+================================================== */
+
+function backToMenu() {
+
+    hideScreens();
+
+    document
+        .getElementById("menuScreen")
+        .classList.remove("hidden");
+
+}
+
+
+/* ==================================================
+TRUTH / DARE MODE
+================================================== */
+
+function setMode(newMode) {
+
+    mode = newMode;
+
+    document
+        .getElementById("truthBtn")
+        .classList.remove("active");
+
+    document
+        .getElementById("dareBtn")
+        .classList.remove("active");
+
+
+    if (mode === "truth") {
+
+        document
+            .getElementById("truthBtn")
+            .classList.add("active");
+
+        document
+            .getElementById("cardLabel")
+            .textContent =
+            "Truth 💭";
+
+        document
+            .getElementById("question")
+            .textContent =
+            "Okay... tell me something your heart has been hiding. ❤️";
+
+        document
+            .getElementById("counter")
+            .textContent =
+            truthIndex + " / 10";
+
+    }
+
+    else {
+
+        document
+            .getElementById("dareBtn")
+            .classList.add("active");
+
+        document
+            .getElementById("cardLabel")
+            .textContent =
+            "Dare 🔥";
+
+        document
+            .getElementById("question")
+            .textContent =
+            "Okay birthday boy... let's see how brave you really are. 👀🔥";
+
+        document
+            .getElementById("counter")
+            .textContent =
+            dareIndex + " / 10";
+
+    }
+
+}
+
+
+/* ==================================================
+NEXT QUESTION
+================================================== */
+
+function nextQuestion() {
+
+    if (mode === "truth") {
+
+        if (truthIndex >= truths.length) {
+
+            document
+                .getElementById("question")
+                .textContent =
+                "You've survived all 10 truths. Now switch to Dare. 😈❤️";
+
+            return;
+
+        }
+
+        document
+            .getElementById("question")
+            .textContent =
+            truths[truthIndex];
+
+        truthIndex++;
+
+        document
+            .getElementById("counter")
+            .textContent =
+            truthIndex + " / 10";
+
+    }
+
+    else {
+
+        if (dareIndex >= dares.length) {
+
+            document
+                .getElementById("question")
+                .textContent =
+                "You've survived all 10 dares. Congratulations, birthday boy. 😂❤️";
+
+            return;
+
+        }
+
+        document
+            .getElementById("question")
+            .textContent =
+            dares[dareIndex];
+
+        dareIndex++;
+
+        document
+            .getElementById("counter")
+            .textContent =
+            dareIndex + " / 10";
+
+    }
+
+    sparkle();
+
+}
+
+
+/* ==================================================
+GIFTS
+================================================== */
+
+function revealGift(element) {
+
+    let content =
+        element.querySelector(".gift-content");
+
+    content.classList.toggle("show");
+
+
+    if (
+        content.classList.contains("show")
+    ) {
+
+        element
+            .querySelector(".gift-box")
+            .textContent =
+            "💝";
+
+        sparkle();
+
+    }
+
+}
+
+
+/* ==================================================
+LETTER
+================================================== */
+
+function openLetter() {
+
+    let letter =
+        document.getElementById("letter");
+
+    letter.classList.remove("hidden");
+
+    letter.classList.add("fade");
+
+
+    setTimeout(() => {
+
+        letter.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "center"
+
+        });
+
+    },150);
+
+}
+
+
+/* ==================================================
+MUSIC ON / OFF
+================================================== */
+
+function toggleMusic() {
+
+    let song =
+        document.getElementById("song");
+
+    let button =
+        document.getElementById("musicButton");
+
+
+    if (song.paused) {
+
+        song.play()
+
+        .then(() => {
+
+            button.textContent =
+                "🎵 Music: ON";
+
+        })
+
+        .catch(() => {
+
+            alert(
+                "Make sure tu-hi-mera.mp3 is in the same folder as index.html ❤️"
+            );
+
+        });
+
+    }
+
+    else {
+
+        song.pause();
+
+        button.textContent =
+            "🎵 Music: OFF";
+
+    }
+
+}
+
+
+/* ==================================================
+FLOATING HEART CREATOR
+================================================== */
+
+function createHeart() {
+
+    let heart =
+        document.createElement("div");
+
+    heart.className =
+        "heart";
+
+
+    let hearts = [
+
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💘",
+        "💞",
+        "💓"
+
+    ];
+
+
+    heart.textContent =
+        hearts[
+            Math.floor(
+                Math.random() *
+                hearts.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.fontSize =
+        15 +
+        Math.random() * 25 +
+        "px";
+
+
+    heart.style.animationDuration =
+        5 +
+        Math.random() * 7 +
+        "s";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    },13000);
+
+}
+
+
+/* ==================================================
+START HEARTS
+================================================== */
+
+function createHearts() {
+
+    setInterval(
+        createHeart,
+        750
+    );
+
+}
+
+
+/* ==================================================
+SPARKLE EFFECT
+================================================== */
+
+function sparkle() {
+
+    for (
+        let i = 0;
+        i < 12;
+        i++
+    ) {
+
+        let star =
+            document.createElement("div");
+
+        star.textContent =
+            "✨";
+
+
+        star.style.position =
+            "fixed";
+
+
+        star.style.left =
+            40 +
+            Math.random() * 20 +
+            "%";
+
+
+        star.style.top =
+            40 +
+            Math.random() * 20 +
+            "%";
+
+
+        star.style.fontSize =
+            "20px";
+
+
+        star.style.zIndex =
+            "100";
+
+
+        star.style.pointerEvents =
+            "none";
+
+
+        document.body.appendChild(
+            star
+        );
+
+
+        star.animate(
+
+            [
+
+                {
+
+                    transform:
+                        "scale(0) translateY(0)",
+
+                    opacity: 1
+
+                },
+
+                {
+
+                    transform:
+                        "scale(1.5) translateY(-100px)",
+
+                    opacity: 0
+
+                }
+
+            ],
+
+            {
+
+                duration: 1000,
+
+                easing: "ease-out"
+
+            }
+
+        );
+
+
+        setTimeout(() => {
+
+            star.remove();
+
+        },1000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
