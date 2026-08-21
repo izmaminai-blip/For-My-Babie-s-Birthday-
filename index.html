@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,21 +32,15 @@ body {
     overflow-x: hidden;
 }
 
-/* ==================================================
-FLOATING HEARTS
-================================================== */
-
 .heart {
     position: fixed;
     bottom: -50px;
     pointer-events: none;
     z-index: 1;
-
     animation: floatUp linear forwards;
 }
 
 @keyframes floatUp {
-
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 0;
@@ -59,31 +54,22 @@ FLOATING HEARTS
         transform: translateY(-110vh) rotate(360deg);
         opacity: 0;
     }
-
 }
-
-/* ==================================================
-GENERAL
-================================================== */
 
 .container {
     position: relative;
     z-index: 2;
-
     max-width: 900px;
     margin: auto;
-
     padding: 30px 20px 80px;
 }
 
 .screen {
     min-height: 90vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 }
 
@@ -96,7 +82,6 @@ GENERAL
 }
 
 @keyframes fadeIn {
-
     from {
         opacity: 0;
         transform: translateY(25px);
@@ -106,23 +91,19 @@ GENERAL
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
 .tiny {
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
-
     color: #ffd0df;
-
     margin-bottom: 15px;
 }
 
 h1 {
     font-size: clamp(45px, 9vw, 85px);
     line-height: 1;
-
     margin-bottom: 25px;
 
     text-shadow:
@@ -131,7 +112,6 @@ h1 {
 
 h2 {
     font-size: clamp(32px, 6vw, 52px);
-
     margin-bottom: 15px;
 }
 
@@ -149,18 +129,14 @@ p {
 
 .subtitle {
     max-width: 650px;
-
     font-size: 19px;
-
     color: #ffe7ef;
-
     margin-bottom: 35px;
 }
 
 button {
     font-family: inherit;
     cursor: pointer;
-
     transition: 0.25s;
 }
 
@@ -171,13 +147,9 @@ button:hover {
 .main-btn {
     background: #ffd0df;
     color: #59072e;
-
     border: none;
-
     padding: 16px 32px;
-
     border-radius: 40px;
-
     font-size: 17px;
     font-weight: bold;
 
@@ -187,57 +159,41 @@ button:hover {
 
 .secondary-btn {
     margin-top: 25px;
-
     background: rgba(255,255,255,0.12);
-
     color: white;
-
     border: 1px solid rgba(255,255,255,0.3);
-
     padding: 13px 25px;
-
     border-radius: 30px;
 }
 
-/* ==================================================
-MUSIC
-================================================== */
+/* MUSIC */
 
 .music-btn {
     position: fixed;
-
     right: 18px;
     top: 18px;
-
     z-index: 50;
 
     border: none;
 
     background: #ffd1e0;
-
     color: #59072e;
 
     border-radius: 30px;
-
     padding: 11px 17px;
 
     font-weight: bold;
 }
 
-/* ==================================================
-BIG HEART
-================================================== */
+/* BIG HEART */
 
 .big-heart {
     font-size: 75px;
-
     animation: heartbeat 1.3s infinite;
-
     margin-bottom: 20px;
 }
 
 @keyframes heartbeat {
-
     0%,100% {
         transform: scale(1);
     }
@@ -245,30 +201,21 @@ BIG HEART
     50% {
         transform: scale(1.16);
     }
-
 }
 
-/* ==================================================
-MAIN MENU
-================================================== */
+/* MAIN MENU */
 
 .menu {
-
     width: 100%;
     max-width: 720px;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
+    grid-template-columns: repeat(2,1fr);
     gap: 18px;
 }
 
 .menu-card {
-
     min-height: 180px;
-
     padding: 25px;
 
     border-radius: 25px;
@@ -282,12 +229,10 @@ MAIN MENU
     backdrop-filter: blur(12px);
 
     cursor: pointer;
-
     transition: 0.25s;
 }
 
 .menu-card:hover {
-
     background:
         rgba(255,255,255,0.18);
 
@@ -296,34 +241,24 @@ MAIN MENU
 }
 
 .menu-icon {
-
     font-size: 45px;
-
     margin-bottom: 12px;
 }
 
 .menu-card p {
-
     color: #ffdce8;
-
     font-size: 13px;
 }
 
-/* ==================================================
-TRUTH OR DARE
-================================================== */
+/* TRUTH OR DARE */
 
 .choices {
-
     display: flex;
-
     gap: 15px;
-
     margin: 20px 0;
 }
 
 .choice {
-
     background:
         rgba(255,255,255,0.12);
 
@@ -336,29 +271,21 @@ TRUTH OR DARE
         13px 30px;
 
     border-radius: 30px;
-
     font-size: 16px;
 }
 
 .choice.active {
-
     background: #ffb5cf;
-
     color: #57072d;
-
     font-weight: bold;
 }
 
 .game-card {
-
     width: 100%;
-
     max-width: 750px;
-
     min-height: 350px;
 
     padding: 45px 30px;
-
     border-radius: 30px;
 
     background:
@@ -370,11 +297,8 @@ TRUTH OR DARE
     backdrop-filter: blur(15px);
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
 
     box-shadow:
@@ -382,74 +306,50 @@ TRUTH OR DARE
 }
 
 .card-label {
-
     color: #ffb3ce;
-
     text-transform: uppercase;
-
     letter-spacing: 3px;
-
     font-size: 12px;
-
     margin-bottom: 20px;
 }
 
 .question {
-
     max-width: 680px;
-
-    font-size:
-        clamp(22px,5vw,35px);
-
+    font-size: clamp(22px,5vw,35px);
     line-height: 1.45;
-
     margin-bottom: 30px;
 }
 
 .next-btn {
-
     border: none;
-
     background: #ffb4cf;
-
     color: #57072d;
 
     padding: 15px 30px;
-
     border-radius: 30px;
 
     font-weight: bold;
-
     font-size: 16px;
 }
 
 .counter {
-
     margin-top: 17px;
-
     color: #ffd2e0;
-
     font-size: 13px;
 }
 
-/* ==================================================
-GIFTS
-================================================== */
+/* GIFTS */
 
 .gift-grid {
-
     width: 100%;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
 
     gap: 18px;
 }
 
 .gift {
-
     min-height: 240px;
 
     padding: 25px 15px;
@@ -463,12 +363,10 @@ GIFTS
         1px solid rgba(255,255,255,0.22);
 
     cursor: pointer;
-
     transition: 0.25s;
 }
 
 .gift:hover {
-
     background:
         rgba(255,255,255,0.18);
 
@@ -477,40 +375,28 @@ GIFTS
 }
 
 .gift-box {
-
     font-size: 65px;
-
     margin-bottom: 15px;
 }
 
 .gift-content {
-
     display: none;
-
     margin-top: 15px;
-
     color: #ffe5ed;
-
     font-size: 14px;
 }
 
 .gift-content.show {
-
     display: block;
 }
 
-/* ==================================================
-10 REASONS — ALL ON ONE PAGE
-================================================== */
+/* REASONS */
 
 .reasons-list {
-
     width: 100%;
-
     max-width: 750px;
 
     display: flex;
-
     flex-direction: column;
 
     gap: 14px;
@@ -520,9 +406,7 @@ GIFTS
 }
 
 .reason-card {
-
     display: flex;
-
     align-items: center;
 
     gap: 20px;
@@ -546,7 +430,6 @@ GIFTS
 }
 
 .reason-card:hover {
-
     transform:
         translateX(7px);
 
@@ -555,39 +438,29 @@ GIFTS
 }
 
 .reason-card span {
-
     min-width: 42px;
-
     height: 42px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
 
     background: #ffb6d0;
-
     color: #59072e;
 
     font-weight: bold;
-
     font-size: 13px;
 }
 
 .reason-card p {
-
     color: #ffe7ef;
-
     font-size: 16px;
-
     line-height: 1.6;
 }
 
 .special-reason {
-
     background:
         rgba(255,182,208,0.16);
 
@@ -598,29 +471,22 @@ GIFTS
 }
 
 .special-reason p {
-
     color: white;
-
     font-weight: bold;
 }
 
-/* ==================================================
-FINAL
-================================================== */
+/* FINAL */
 
 .final-message {
-
     max-width: 700px;
 
     font-size: 20px;
-
     line-height: 2;
 
     color: #ffe5ed;
 }
 
 .letter {
-
     max-width: 720px;
 
     margin-top: 35px;
@@ -629,7 +495,6 @@ FINAL
         45px 35px;
 
     background: #fff3f7;
-
     color: #5b1233;
 
     text-align: left;
@@ -641,84 +506,59 @@ FINAL
 }
 
 .letter h3 {
-
     text-align: center;
-
     color: #8c1748;
-
     font-size: 30px;
-
     margin-bottom: 25px;
 }
 
 .letter p {
-
     margin-bottom: 20px;
 }
 
-/* ==================================================
-MOBILE
-================================================== */
+/* MOBILE */
 
 @media (max-width:650px) {
 
     .menu {
-
         grid-template-columns: 1fr;
     }
 
     .gift-grid {
-
         grid-template-columns: 1fr;
     }
 
     .game-card {
-
         padding:
             30px 20px;
     }
 
     .reason-card {
-
         align-items: flex-start;
-
         padding:
             17px;
     }
 
     .reason-card span {
-
         min-width: 38px;
-
         height: 38px;
     }
 
     .reason-card p {
-
         font-size: 15px;
     }
 
 }
-
-/* ==================================================
-END CSS
-================================================== */
 
 </style>
 </head>
 
 <body>
 
-<!-- ==================================================
-MUSIC
-================================================== -->
+<!-- MUSIC -->
 
-<audio id="song" loop>
-
-    <source
-        src="tu-hi-mera.mp3"
-        type="audio/mpeg">
-
+<audio id="song" loop preload="auto">
+    <source src="./tu-hi-mera.mp3" type="audio/mpeg">
 </audio>
 
 <button
@@ -730,12 +570,9 @@ MUSIC
 
 </button>
 
-
 <div class="container">
 
-<!-- ==================================================
-OPENING
-================================================== -->
+<!-- OPENING -->
 
 <section
     class="screen fade"
@@ -750,15 +587,11 @@ OPENING
     </div>
 
     <h1>
-
         Happy Birthday,
-
         <br>
-
         <span class="pink">
             My Love ❤️
         </span>
-
     </h1>
 
     <p class="subtitle">
@@ -788,10 +621,7 @@ OPENING
 
 </section>
 
-
-<!-- ==================================================
-MENU
-================================================== -->
+<!-- MENU -->
 
 <section
     class="screen hidden fade"
@@ -802,33 +632,22 @@ MENU
     </div>
 
     <h2>
-
         Everything here is for
         <span class="pink">
             you
         </span> ❤️
-
     </h2>
 
     <p class="subtitle">
-
         Pick something...
-
         <br>
-
         I made all of it for you.
-
     </p>
 
     <div class="menu">
 
-        <div
-            class="menu-card"
-            onclick="openGame()">
-
-            <div class="menu-icon">
-                🎲
-            </div>
+        <div class="menu-card" onclick="openGame()">
+            <div class="menu-icon">🎲</div>
 
             <h3>
                 Truth or Dare
@@ -838,13 +657,9 @@ MENU
                 10 truths + 10 dares.
                 Be honest. Or be brave. 👀
             </p>
-
         </div>
 
-
-        <div
-            class="menu-card"
-            onclick="openGifts()">
+        <div class="menu-card" onclick="openGifts()">
 
             <div class="menu-icon">
                 🎁
@@ -861,10 +676,7 @@ MENU
 
         </div>
 
-
-        <div
-            class="menu-card"
-            onclick="openReasons()">
+        <div class="menu-card" onclick="openReasons()">
 
             <div class="menu-icon">
                 ❤️
@@ -881,10 +693,7 @@ MENU
 
         </div>
 
-
-        <div
-            class="menu-card"
-            onclick="openFinal()">
+        <div class="menu-card" onclick="openFinal()">
 
             <div class="menu-icon">
                 💌
@@ -905,10 +714,7 @@ MENU
 
 </section>
 
-
-<!-- ==================================================
-TRUTH OR DARE
-================================================== -->
+<!-- TRUTH OR DARE -->
 
 <section
     class="screen hidden fade"
@@ -954,7 +760,6 @@ TRUTH OR DARE
 
     </div>
 
-
     <div class="game-card">
 
         <div
@@ -995,7 +800,6 @@ TRUTH OR DARE
 
     </div>
 
-
     <button
         class="secondary-btn"
         onclick="backToMenu()">
@@ -1006,10 +810,7 @@ TRUTH OR DARE
 
 </section>
 
-
-<!-- ==================================================
-GIFTS
-================================================== -->
+<!-- GIFTS -->
 
 <section
     class="screen hidden fade"
@@ -1027,9 +828,7 @@ GIFTS
         Three little things from me to you.
     </p>
 
-
     <div class="gift-grid">
-
 
         <div
             class="gift"
@@ -1056,7 +855,6 @@ GIFTS
             </div>
 
         </div>
-
 
         <div
             class="gift"
@@ -1088,7 +886,6 @@ GIFTS
             </div>
 
         </div>
-
 
         <div
             class="gift"
@@ -1123,7 +920,6 @@ GIFTS
 
     </div>
 
-
     <button
         class="secondary-btn"
         onclick="backToMenu()">
@@ -1134,10 +930,7 @@ GIFTS
 
 </section>
 
-
-<!-- ==================================================
-10 REASONS — ALL TOGETHER
-================================================== -->
+<!-- 10 REASONS -->
 
 <section
     class="screen hidden fade"
@@ -1161,189 +954,115 @@ GIFTS
 
     </p>
 
-
     <div class="reasons-list">
 
-
         <div class="reason-card">
-
-            <span>
-                01
-            </span>
+            <span>01</span>
 
             <p>
-
                 I love your smile lines around your
                 eyes and cutu cheeks when you smile—
                 it genuinely makes
                 my whole mood better 🤍
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                02
-            </span>
+            <span>02</span>
 
             <p>
-
                 I love how you can
                 make me laugh even
                 when I'm not in the
                 mood to laugh and
                 jab tum mujhe tang karty ho 🤍
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                03
-            </span>
+            <span>03</span>
 
             <p>
-
                 I love how safe and
                 comfortable I feel
                 whenever I'm with
                 to you. BEST FEELING 🤍
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                04
-            </span>
+            <span>04</span>
 
             <p>
-
                 I love that even from
                 far away, you somehow
-                still feel SOOOOOOO 
+                still feel SOOOOOOO
                 close to me 🤍
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                05
-            </span>
+            <span>05</span>
 
             <p>
-
                 I love all our Bhondu
                 jokes that are so unfunny
                 yet so funny 🤍
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                06
-            </span>
+            <span>06</span>
 
             <p>
-
                 I love how you remember
                 the tiny little things about me
                 and remind me (That list in your phone 🤍).
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                07
-            </span>
+            <span>07</span>
 
             <p>
-
                 I love how you make me
                 feel wanted, loved
                 and important alllllll the time 🤍
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                08
-            </span>
+            <span>08</span>
 
             <p>
-
                 I love that I can share
                 anything and everything
                 with you and you only 🤍.
-
             </p>
-
         </div>
 
-
         <div class="reason-card">
-
-            <span>
-                09
-            </span>
+            <span>09</span>
 
             <p>
-
                 I love imagining all
                 the memories we made and
                 still gonna make together 🤍
-
             </p>
-
         </div>
 
-
-        <div
-            class="reason-card special-reason">
-
-            <span>
-                10
-            </span>
+        <div class="reason-card special-reason">
+            <span>10</span>
 
             <p>
-
                 I love you because you are
                 the best person and the best
                 thing happend to me in my entire
                 life and I will forever choose you ❤️
-
             </p>
-
         </div>
 
-
     </div>
-
 
     <button
         class="secondary-btn"
@@ -1355,10 +1074,7 @@ GIFTS
 
 </section>
 
-
-<!-- ==================================================
-FINAL
-================================================== -->
+<!-- FINAL -->
 
 <section
     class="screen hidden fade"
@@ -1375,7 +1091,6 @@ FINAL
     <h1>
         You're Stuck With Me.
     </h1>
-
 
     <div class="final-message">
 
@@ -1434,7 +1149,6 @@ FINAL
 
     </div>
 
-
     <button
         class="main-btn"
         onclick="openLetter()">
@@ -1442,7 +1156,6 @@ FINAL
         💌 Read Your Letter Babie
 
     </button>
-
 
     <div
         class="letter hidden"
@@ -1457,116 +1170,86 @@ FINAL
         </p>
 
         <p>
-
             I wish I could be beside you
             right now, annoying you in person,
             making you laugh, stealing your
-            attention and probably refusing
-            to let you have any peace because
+            attention and probably refusing to
+            let you have any peace because
             it's your birthday. 😭
-
         </p>
 
         <p>
-
             Since I can't do that right now,
             I made you this little corner
             of the internet.
-
         </p>
 
         <p>
-
             I wanted to give you something
             you could come back to whenever
             you miss me.
-
         </p>
 
         <p>
-
             Every little heart, every question,
             every dare, every reason and every
             word here was made because I wanted
             you to feel how loved you are.
-
         </p>
 
         <p>
-
             I IZMORAE YOU 💕
         </p>
 
         <p>
-
             I love that you are mine and I am yours 🤍
-
         </p>
 
         <p>
-
             Distance might mean I can't physically
             be there today, but it doesn't change
             how much you mean to me.
-
         </p>
 
         <p>
-
             I want more birthdays with you.
             More memories.
             More dates.
             More laughing until our stomachs hurt.
             More of everything with you.
-
         </p>
 
         <p>
-
             And one day, hopefully,
             no more screens between us and we would be together 💛.
-
         </p>
 
         <p>
-
             Until then, I'm choosing you and you only mere munnu 💕.
 
             <br>
-
             Again.
-
             <br>
-
             And again.
-
             <br>
-
             And again.
-
         </p>
 
         <p>
-
             Happy birthday to my favourite person. ❤️
-
         </p>
 
         <p style="text-align:center;">
 
             <strong>
-
                 Stay Happy bohot saara and Blessed and Loved by me. ❤️
-
             </strong>
 
             <br><br>
 
             <strong>
-
                 Now come here and give me
                 my birthday kiss fas fas. 💋
-
             </strong>
 
         </p>
@@ -1577,7 +1260,6 @@ FINAL
 
 </div>
 
-
 <script>
 
 /* ==================================================
@@ -1587,70 +1269,41 @@ TRUTHS
 const truths = [
 
     "What was the exact moment you realised you were falling for me?",
-
     "What's the cutest thing about me that you don't think I realise?",
-
     "What's your favourite memory of us?",
-
     "What do you miss most about me when we're apart?",
-
     "What's one thing I do that instantly makes you smile?",
-
     "What's one thing you want to do with me the first time we get to spend a whole day together?",
-
     "What's your favourite picture of me?",
-
     "What's one thing about our relationship that you're secretly really grateful for?",
-
     "How much do you love me and why 👀",
-
     "What's one thing you've always wanted to tell me but never actually said? ❤️"
 
 ];
 
-
-/* ==================================================
-DARES
-================================================== */
-
 const dares = [
 
     "Send me a voice note telling me three things you love about me.",
-
     "Send me your cutest selfie right now. No retakes. 😭",
-
     "Tell me exactly what our dream date would look.",
-
     "Send me a song that reminds you of me and tell me why.",
-
     "Bring me a payal when we meet and propose me. 💋",
-
     "Tell me five things you want to do together when we're finally in the same place.",
-
     "Send me a voice note saying my name in your sweetest voice.",
-
     "Spend whole night talking to me WE ARE NOT SLEEPING TILL 5AM. 👀",
-
     "Answer to my dumb questions for next 1 hour.",
-
     "End the game by telling me, in your own words, why you love me. ❤️"
 
 ];
 
-
-/* ==================================================
-GAME VARIABLES
-================================================== */
+/* GAME VARIABLES */
 
 let mode = "truth";
-
 let truthIndex = 0;
-
 let dareIndex = 0;
 
-
 /* ==================================================
-OPEN BIRTHDAY
+OPEN BIRTHDAY + START MUSIC
 ================================================== */
 
 function openBirthday() {
@@ -1665,12 +1318,32 @@ function openBirthday() {
 
     createHearts();
 
+    /*
+       IMPORTANT:
+       The music starts here because this function
+       is triggered directly by the user's button click.
+    */
+
+    const song = document.getElementById("song");
+    const button = document.getElementById("musicButton");
+
+    song.play()
+        .then(() => {
+
+            button.textContent = "🎵 Music: ON";
+
+        })
+        .catch((error) => {
+
+            console.log("Music could not start:", error);
+
+            button.textContent = "🎵 Play Music";
+
+        });
+
 }
 
-
-/* ==================================================
-HIDE ALL SCREENS
-================================================== */
+/* HIDE ALL SCREENS */
 
 function hideScreens() {
 
@@ -1684,10 +1357,7 @@ function hideScreens() {
 
 }
 
-
-/* ==================================================
-OPEN GAME
-================================================== */
+/* OPEN GAME */
 
 function openGame() {
 
@@ -1699,10 +1369,7 @@ function openGame() {
 
 }
 
-
-/* ==================================================
-OPEN GIFTS
-================================================== */
+/* OPEN GIFTS */
 
 function openGifts() {
 
@@ -1714,10 +1381,7 @@ function openGifts() {
 
 }
 
-
-/* ==================================================
-OPEN REASONS
-================================================== */
+/* OPEN REASONS */
 
 function openReasons() {
 
@@ -1729,10 +1393,7 @@ function openReasons() {
 
 }
 
-
-/* ==================================================
-OPEN FINAL
-================================================== */
+/* OPEN FINAL */
 
 function openFinal() {
 
@@ -1744,10 +1405,7 @@ function openFinal() {
 
 }
 
-
-/* ==================================================
-BACK TO MENU
-================================================== */
+/* BACK TO MENU */
 
 function backToMenu() {
 
@@ -1759,10 +1417,7 @@ function backToMenu() {
 
 }
 
-
-/* ==================================================
-TRUTH / DARE MODE
-================================================== */
+/* TRUTH / DARE */
 
 function setMode(newMode) {
 
@@ -1775,7 +1430,6 @@ function setMode(newMode) {
     document
         .getElementById("dareBtn")
         .classList.remove("active");
-
 
     if (mode === "truth") {
 
@@ -1825,10 +1479,7 @@ function setMode(newMode) {
 
 }
 
-
-/* ==================================================
-NEXT QUESTION
-================================================== */
+/* NEXT QUESTION */
 
 function nextQuestion() {
 
@@ -1890,10 +1541,7 @@ function nextQuestion() {
 
 }
 
-
-/* ==================================================
-GIFTS
-================================================== */
+/* GIFTS */
 
 function revealGift(element) {
 
@@ -1901,7 +1549,6 @@ function revealGift(element) {
         element.querySelector(".gift-content");
 
     content.classList.toggle("show");
-
 
     if (
         content.classList.contains("show")
@@ -1918,10 +1565,7 @@ function revealGift(element) {
 
 }
 
-
-/* ==================================================
-LETTER
-================================================== */
+/* LETTER */
 
 function openLetter() {
 
@@ -1932,13 +1576,11 @@ function openLetter() {
 
     letter.classList.add("fade");
 
-
     setTimeout(() => {
 
         letter.scrollIntoView({
 
             behavior: "smooth",
-
             block: "center"
 
         });
@@ -1947,38 +1589,38 @@ function openLetter() {
 
 }
 
-
 /* ==================================================
 MUSIC ON / OFF
 ================================================== */
 
 function toggleMusic() {
 
-    let song =
+    const song =
         document.getElementById("song");
 
-    let button =
+    const button =
         document.getElementById("musicButton");
-
 
     if (song.paused) {
 
         song.play()
+            .then(() => {
 
-        .then(() => {
+                button.textContent =
+                    "🎵 Music: ON";
 
-            button.textContent =
-                "🎵 Music: ON";
+            })
+            .catch((error) => {
 
-        })
+                console.error(
+                    "Audio could not play:",
+                    error
+                );
 
-        .catch(() => {
+                button.textContent =
+                    "🎵 Play Music";
 
-            alert(
-                "Make sure tu-hi-mera.mp3 is in the same folder as index.html ❤️"
-            );
-
-        });
+            });
 
     }
 
@@ -1993,10 +1635,7 @@ function toggleMusic() {
 
 }
 
-
-/* ==================================================
-FLOATING HEART CREATOR
-================================================== */
+/* FLOATING HEART */
 
 function createHeart() {
 
@@ -2006,9 +1645,7 @@ function createHeart() {
     heart.className =
         "heart";
 
-
     let hearts = [
-
         "❤️",
         "💗",
         "💕",
@@ -2016,9 +1653,7 @@ function createHeart() {
         "💘",
         "💞",
         "💓"
-
     ];
-
 
     heart.textContent =
         hearts[
@@ -2028,27 +1663,22 @@ function createHeart() {
             )
         ];
 
-
     heart.style.left =
         Math.random() * 100 + "vw";
-
 
     heart.style.fontSize =
         15 +
         Math.random() * 25 +
         "px";
 
-
     heart.style.animationDuration =
         5 +
         Math.random() * 7 +
         "s";
 
-
     document.body.appendChild(
         heart
     );
-
 
     setTimeout(() => {
 
@@ -2058,10 +1688,7 @@ function createHeart() {
 
 }
 
-
-/* ==================================================
-START HEARTS
-================================================== */
+/* START HEARTS */
 
 function createHearts() {
 
@@ -2072,10 +1699,7 @@ function createHearts() {
 
 }
 
-
-/* ==================================================
-SPARKLE EFFECT
-================================================== */
+/* SPARKLE */
 
 function sparkle() {
 
@@ -2091,74 +1715,56 @@ function sparkle() {
         star.textContent =
             "✨";
 
-
         star.style.position =
             "fixed";
-
 
         star.style.left =
             40 +
             Math.random() * 20 +
             "%";
 
-
         star.style.top =
             40 +
             Math.random() * 20 +
             "%";
 
-
         star.style.fontSize =
             "20px";
-
 
         star.style.zIndex =
             "100";
 
-
         star.style.pointerEvents =
             "none";
-
 
         document.body.appendChild(
             star
         );
-
 
         star.animate(
 
             [
 
                 {
-
                     transform:
                         "scale(0) translateY(0)",
-
                     opacity: 1
-
                 },
 
                 {
-
                     transform:
                         "scale(1.5) translateY(-100px)",
-
                     opacity: 0
-
                 }
 
             ],
 
             {
-
                 duration: 1000,
-
                 easing: "ease-out"
-
             }
 
         );
-
 
         setTimeout(() => {
 
@@ -2174,3 +1780,4 @@ function sparkle() {
 
 </body>
 </html>
+```
